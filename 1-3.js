@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/n8RNk
 var myObject = new Object(); // Object()オブジェクトを生成
 
 // ブラケット記法でmyObjectの0,1,2の各プロパティに文字を代入

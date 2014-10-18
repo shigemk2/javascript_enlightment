@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/UwnX7
 // コンストラクタ関数=テンプレート、クッキーの抜き型
 var cody = new Object();
 cody.living = true;

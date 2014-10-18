@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/m6nCr
 // あとでPerson()オブジェクトを生成するために、Personコンストラクタを定義
 var Person = function(living, age, gender) {
   this.living = living;

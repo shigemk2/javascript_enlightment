@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/qPTk9
 // Object()コンストラクタを使ってcodyAを生成
 var codyA = new Object();
 codyA.living = true;

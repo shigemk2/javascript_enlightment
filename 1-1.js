@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/DD9k7
 // オブジェクトとは、名前と値を持つプロパティを格納するコンテナにすぎない
 var cody = new Object();
 
