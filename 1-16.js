@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/TKaQD/
 // プリミティブ値を宣言
 var myNull            = null;
 var myUndefined       = undefined;
