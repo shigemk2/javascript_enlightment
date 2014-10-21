@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/WLM9u
 // コンストラクタ関数にnew演算子を付与していないことに留意してください。
 // プリミティブ値を生成する際は、オブジェクトは生成されない
 var primitiveString1  = "foo";
