@@ -1,3 +1,4 @@
+// http://jsfiddle.net/jseja/HJuFe/
 // 配列を使って擬似的な多次元配列を生成
 
 var myArray = [[[]]]; // 空の配列に空の配列を持った空の配列
