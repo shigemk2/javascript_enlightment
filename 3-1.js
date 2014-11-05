@@ -5,3 +5,9 @@ for (key in cody) { // codyオブジェクトが空のオブジェクトであ�
     console.log(key); // codyはプロパティを持たないので、何も出力されない
   }
 }
+var cody1 = {foo: "bar"};
+for (key in cody1) {
+  if (cody1.hasOwnProperty(key)) {
+    console.log(key);
+  }
+}
