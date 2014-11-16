@@ -5,6 +5,7 @@ var addFunction = function(number1, number2) {
 };
 
 console.log(addFunction(3, 3)); // 6
+console.log(addFunction()); // NaN
 
 // 他の多くのプログラミング言語とは異なり、JavaScriptでは関数にパラメータが設定されていても常にパラメータと同じ数の引数を渡さなくてもかまいません。
 // ただし、定義されているパラメータに引数が渡されていない場合、その変数にはundefinedが設定されます。
