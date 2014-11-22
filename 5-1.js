@@ -1,0 +1,10 @@
+// http://jsfiddle.net/jseja/MqYcW
+var myStringVar = 'myString';
+var myFunctionVar = function() {};
+myString = 'myString';
+myFunction = function() {};
+
+console.log('myStringVar' in window); // 出力：true(*)
+console.log('myFunctionVar' in window); // 出力：true(*)
+console.log('myString' in window); // 出力：true(*)
+console.log('myFunction' in window); // 出力：true(*)
