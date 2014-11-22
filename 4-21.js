@@ -11,3 +11,4 @@ var speak = function() {
 console.log(sum(2, 2)); // まだ定義されていないsum()を呼び出すことができる
 function sum(x, y) {return x + y;}
 
+// 関数式で定義された関数は巻き上げられません。関数宣言で定義された関数のみが巻き上げられます
