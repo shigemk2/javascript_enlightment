@@ -1,0 +1,14 @@
+<script "text/javascript">
+// http://jsfiddle.net/jseja/aLLDJ/
+window.foo = 'foo';
+window.myObject = {foo: 'I am myObject.foo'};
+
+window.sayFoo = function() {
+  console.log(this['foo']);
+};
+
+window.myObject.sayFoo = sayFoo;
+
+window.myObject.sayFoo(); // sayFoo()内でのthisはmyObjectなので'I am myObject.foo'を出力
+window.sayFoo(); // sayFoo()内でのthisはwindowなので'foo'を出力
+</script>
