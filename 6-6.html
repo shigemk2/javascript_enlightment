@@ -1,0 +1,11 @@
+<script "text/javascript">
+// http://jsfiddle.net/jseja/rhpsL
+var foo = {
+  func1 : function(bar) {
+    bar(); // この例では渡された無名関数が実行され、fooではなくwindowを出力
+    console.log(this); // しかし、このthisはfooオブジェクトへの参照
+  }
+}
+
+foo.func1( function() { console.log(this) }); // 無名関数を引数として渡して実行
+</script>
