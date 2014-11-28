@@ -1,0 +1,14 @@
+<script "text/javascript">
+// http://jsfiddle.net/jseja/apDPN
+var Person = function(name) {
+    this.name = name || 'john doe';
+}
+
+var cody = Person('Cody Lindley'); // new演算子を使用せずPerson()を実行
+
+// cody.nameはundefinedのため、下記を実行するとエラーが発生
+// console.log(cody.name);
+
+// この場合のthisはグローバルオブジェクトのため、渡した引数ははwindow.nameに格納されている
+console.log(window.name); // 出力：'Cody Lindley'
+</script>
