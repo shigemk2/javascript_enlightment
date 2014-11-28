@@ -1,0 +1,22 @@
+<!-- http://jsfiddle.net/jseja/Fj26a/ -->
+<script "text/javascript">
+var Person = function(x){
+    if(x) { this.fullName = x; };
+};
+
+Person.prototype.whatIsMyFullName = function() {
+    return this.fullName; // thisはPerson()ではなく、Person()から生成されたインスタンスを参照する
+}
+
+var cody = new Person('cody lindley');
+var lisa = new Person('lisa lindley');
+
+// プロトタイプ継承されたwhatIsMyFullName()メソッドを呼ぶ
+console.log(cody.whatIsMyFullName(),lisa.whatIsMyFullName());
+
+/* 次の例では、デフォルトのfullNameの値を設定する。プロトタイプチェーンが有効なので、インスタンスがfullNameプロパティを持っていない場合はプロトタイプチェーンをたどる。Object.prototypeにfullNameプロパティを設定し、PersonとObject両方のprototypeにfullNameプロパティを持つ。Notesを参照 */
+
+Object.prototype.fullName = 'John Doe';
+var john = new Person(); // 引数が渡されていないのでfullNameプロパティは設定されない
+console.log(john.whatIsMyFullName()); // プロトタイプチェーンをたどって、'John Doe'を出力
+</script>
