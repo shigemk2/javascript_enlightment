@@ -13,3 +13,4 @@ console.log(myObject);
 myFunction.apply(myObject, ['hoge', 'fuga'] );
 console.log(myObject);
 // call()を使う場合は引数はカンマ区切りの値ですが、apply()を使う場合は引数は配列に格納されて渡されます
+// 関数を呼ぶ際、関数のスコープに設定されるthisの値をオーバーライドする方法がある
